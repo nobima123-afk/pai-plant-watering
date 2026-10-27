@@ -1,0 +1,15 @@
+{
+  "validation": {
+    "n": 200,
+    "mae_ml": 0.02211037747081671,
+    "rmse_ml": 0.045742751898749004
+  },
+  "test": {
+    "n": 300,
+    "mae_ml": 0.0163218354314272,
+    "rmse_ml": 0.03210118812870603
+  },
+  "training_samples": 1200,
+  "seed": 20261026,
+  "limitation": "Artificial soil/leaf rule, not real plant watering accuracy."
+}

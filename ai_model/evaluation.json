@@ -1,0 +1,31 @@
+{
+  "validation": {
+    "samples": 200,
+    "accuracy_at_0_5": 0.995,
+    "confident_coverage": 0.965,
+    "review_count": 7,
+    "accuracy_when_not_review": 1.0,
+    "confusion_at_0_5": {
+      "true_water": 60,
+      "true_skip": 139,
+      "false_water": 0,
+      "missed_water": 1
+    }
+  },
+  "test": {
+    "samples": 200,
+    "accuracy_at_0_5": 0.985,
+    "confident_coverage": 0.965,
+    "review_count": 7,
+    "accuracy_when_not_review": 1.0,
+    "confusion_at_0_5": {
+      "true_water": 74,
+      "true_skip": 123,
+      "false_water": 1,
+      "missed_water": 2
+    }
+  },
+  "training_samples": 800,
+  "split": "800 train / 200 validation / 200 held-out test; seed fixed before training",
+  "limitation": "Synthetic labels only; no claim of real plant watering accuracy."
+}

@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "result": "completed",
+  "wall_seconds": 141.36,
+  "dose_results": [
+    {
+      "event": "dose_completed",
+      "elapsed": 39.753,
+      "wall_monotonic_s": 7173.356538342,
+      "pose": [
+        -1.27441517888989,
+        -0.4547951558158516,
+        2.252923426474655
+      ],
+      "waypoint": 1,
+      "target_ml": 180.0,
+      "delivered_ml": 180.092,
+      "error_ml": 0.092,
+      "peak_measured_angle_deg": 45.242,
+      "soil_before": 18,
+      "soil_after": 63.022993224999986,
+      "leaf_before": 78,
+      "leaf_after": 0.0
+    },
+    {
+      "event": "dose_completed",
+      "elapsed": 100.357,
+      "wall_monotonic_s": 7233.960998429,
+      "pose": [
+        0.2534742453311077,
+        -2.241247654316584,
+        -0.8033353498395213
+      ],
+      "waypoint": 3,
+      "target_ml": 152.2,
+      "delivered_ml": 152.579,
+      "error_ml": 0.379,
+      "peak_measured_angle_deg": 49.392,
+      "soil_before": 24,
+      "soil_after": 62.144817124999996,
+      "leaf_before": 55,
+      "leaf_after": 0.0
+    }
+  ],
+  "actions": [
+    "water",
+    "skip",
+    "water",
+    "skip"
+  ],
+  "measured_angle_samples": 3552,
+  "peak_measured_angle_deg": 49.39202275,
+  "max_command_measurement_difference_deg": 42.216771742,
+  "stop_during_watering": false,
+  "final_measured_angle_deg": 0.0004747644163,
+  "final_virtual_flow_ml_s": 0,
+  "final_plants": [
+    {
+      "waypoint": 1,
+      "plant_id": "plant_A",
+      "soil_moisture_pct": 63.022993224999986,
+      "leaf_wilt_pct": 0.0,
+      "temperature_c": 32,
+      "humidity_pct": 35,
+      "hours_since_water": 0.0,
+      "total_received_ml": 180.0919729
+    },
+    {
+      "waypoint": 2,
+      "plant_id": "plant_B",
+      "soil_moisture_pct": 80,
+      "leaf_wilt_pct": 8,
+      "temperature_c": 24,
+      "humidity_pct": 60,
+      "hours_since_water": 8
+    },
+    {
+      "waypoint": 3,
+      "plant_id": "plant_C",
+      "soil_moisture_pct": 62.144817124999996,
+      "leaf_wilt_pct": 0.0,
+      "temperature_c": 29,
+      "humidity_pct": 40,
+      "hours_since_water": 0.0,
+      "total_received_ml": 152.57926849999998
+    },
+    {
+      "waypoint": 4,
+      "plant_id": "plant_D",
+      "soil_moisture_pct": 65,
+      "leaf_wilt_pct": 12,
+      "temperature_c": 26,
+      "humidity_pct": 55,
+      "hours_since_water": 12
+    }
+  ],
+  "limitation": "Virtual soil/leaf sensors and calibrated virtual flow; angle comes from an actual Gazebo joint."
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "algorithm": "logistic_regression",
+  "training_data_source": "synthetic",
+  "seed": 20261026,
+  "features": [
+    "soil_moisture_pct",
+    "temperature_c",
+    "humidity_pct",
+    "hours_since_water"
+  ],
+  "centers": [
+    50.0,
+    25.0,
+    50.0,
+    24.0
+  ],
+  "scales": [
+    50.0,
+    20.0,
+    50.0,
+    24.0
+  ],
+  "weights": [
+    -8.476967704840524,
+    1.0595126188263864,
+    -0.7810777415666853,
+    0.20809101087498938
+  ],
+  "bias": -2.458971970323818,
+  "training_samples": 800,
+  "dataset_sha256": "cd2b4479ef1feeed5187d1ea82325afa7947e83eb6b172a415fe09eca137217a",
+  "teaching_rule": "moisture < 35 + .35*(temp-25) - .10*(humidity-50) + .10*(hours-24) + Normal(0,1.5)",
+  "limitation": "Synthetic labels only; no claim of real plant watering accuracy."
+}
